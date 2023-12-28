@@ -18,8 +18,12 @@
 Пример конечного вывода после команды “ls” :
 Desktop Documents Downloads  HumanFriends.txt  Music  PackAnimals.txt  Pets.txt  Pictures  Videos
 
+![image](https://github.com/ios-Developing/FinalWork/assets/83113180/027df0fb-1f55-4917-a610-48d3521358fe)
+
 2. Работа с директориями в Linux
    - Создать новую директорию и переместить туда файл "Human Friends".
+  
+![2](https://github.com/ios-Developing/FinalWork/assets/83113180/f446d289-71e0-4c00-b51e-2ce76ca978f0)
 
 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
    - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
