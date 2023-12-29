@@ -185,7 +185,11 @@ ID	Name	Type	BirthDate	Commands<br>
 7	Blaze	Horse	2016-02-29	Trot, Jump, Gallop<br>
 8	Sahara	Camel	2015-08-14	Walk, Run<br>
 
+############################# НАЧАЛО РЕШЕНИЯ #####################################
 
+https://github.com/ios-Developing/FinalWork/blob/658e2a0a7193316490545589fdbba34bdfcab885/MySQL.sql
+
+############################# КОНЕЦ РЕШЕНИЯ #####################################
 
 
 8. ООП и Java
