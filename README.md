@@ -18,22 +18,125 @@
 Пример конечного вывода после команды “ls” :
 Desktop Documents Downloads  HumanFriends.txt  Music  PackAnimals.txt  Pets.txt  Pictures  Videos
 
+############################# НАЧАЛО РЕШЕНИЯ #####################################
+
+
 ![image](https://github.com/ios-Developing/FinalWork/assets/83113180/027df0fb-1f55-4917-a610-48d3521358fe)
+
+############################# КОНЕЦ РЕШЕНИЯ #####################################
 
 2. Работа с директориями в Linux
    - Создать новую директорию и переместить туда файл "Human Friends".
   
+############################# НАЧАЛО РЕШЕНИЯ #####################################
+
+  
 ![2](https://github.com/ios-Developing/FinalWork/assets/83113180/f446d289-71e0-4c00-b51e-2ce76ca978f0)
+
+############################# КОНЕЦ РЕШЕНИЯ #####################################
 
 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
    - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+  
+############################# НАЧАЛО РЕШЕНИЯ #####################################
 
-4. Управление deb-пакетами
+Скачиваем конфигуратор mysql:
+
+admin@geekbrains:~$ sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+[sudo] password for admin: 
+--2023-12-29 12:53:06--  https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+Resolving dev.mysql.com (dev.mysql.com)... 23.52.29.249, 2a02:26f0:d200:48c::2e31, 2a02:26f0:d200:493::2e31
+Connecting to dev.mysql.com (dev.mysql.com)|23.52.29.249|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb [following]
+--2023-12-29 12:53:06--  https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb
+Resolving repo.mysql.com (repo.mysql.com)... 23.210.253.161, 2a02:26f0:480:787::1d68, 2a02:26f0:480:78d::1d68
+Connecting to repo.mysql.com (repo.mysql.com)|23.210.253.161|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+
+
+Переходим устанавливаем компоненты mysql с помощью конфигуратора:
+
+admin@geekbrains:~$ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb 
+Selecting previously unselected package mysql-apt-config.
+(Reading database ... 64873 files and directories currently installed.)
+Preparing to unpack mysql-apt-config_0.8.24-1_all.deb ...
+Unpacking mysql-apt-config (0.8.24-1) ...
+Setting up mysql-apt-config (0.8.24-1) ...
+
+Установка MySQL с помощью следующей команды:
+
+admin@geekbrains:$ sudo apt-get update  
+admin@geekbrains:$ sudo apt-get install mysql-server  
+Reading package lists... Done  
+Building dependency tree... Done  
+Reading state information... Done  
+
+Проверяем результат установки:  
+admin@geekbrains:~$ systemctl status mysql  
+● mysql.service - MySQL Community Server  
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)  
+     Active: active (running) since Fri 2023-12-29 12:56:58 MSK; 7min ago  
+    Process: 2665 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre (code=exited, status=0/SUCCESS)  
+   Main PID: 2695 (mysqld)  
+     Status: "Server is operational"  
+      Tasks: 37 (limit: 1117)  
+     Memory: 355.4M  
+        CPU: 4.684s  
+     CGroup: /system.slice/mysql.service  
+     &nbsp; &nbsp; &nbsp; &nbsp; └─2695 /usr/sbin/mysqld  
+
+############################# КОНЕЦ РЕШЕНИЯ #####################################
+
+5. Управление deb-пакетами
    - Установить и затем удалить deb-пакет, используя команду `dpkg`.
 
-5. История команд в терминале Ubuntu
+############################# НАЧАЛО РЕШЕНИЯ #####################################
+
+- Установить
+admin@geekbrains:~$ sudo apt install nmap  
+Reading package lists... Done  
+Building dependency tree... Done  
+Reading state information... Done  
+The following additional packages will be installed:  
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap-common
+
+![3](https://github.com/ios-Developing/FinalWork/assets/83113180/8300b545-7cee-479a-8517-8d6b21364eec)
+
+- Удалить
+
+admin@geekbrains:~$ sudo apt remove nmap  
+Reading package lists... Done  
+Building dependency tree... Done  
+Reading state information... Done  
+The following packages were automatically installed and are no longer required:  
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap-common  
+Use 'sudo apt autoremove' to remove them.  
+The following packages will be REMOVED:  
+  nmap  
+0 upgraded, 0 newly installed, 1 to remove and 118 not upgraded.  
+After this operation, 4341 kB disk space will be freed.  
+Do you want to continue? [Y/n] y  
+(Reading database ... 67997 files and directories currently installed.)  
+Removing nmap (7.91+dfsg1+really7.80+dfsg1-2ubuntu0.1) ...  
+Processing triggers for man-db (2.10.2-1) ...  
+
+![4](https://github.com/ios-Developing/FinalWork/assets/83113180/001165cc-2a1f-4dc5-9031-4607c9e35681)
+
+
+############################# КОНЕЦ РЕШЕНИЯ #####################################
+   
+
+6. История команд в терминале Ubuntu
    - Сохранить и выложить историю ваших терминальных команд в Ubuntu.
 В формате: Файла с ФИО, датой сдачи, номером группы(или потока)
+
+############################# НАЧАЛО РЕШЕНИЯ #####################################
+
+![5](https://github.com/ios-Developing/FinalWork/assets/83113180/a5c44f9c-e0b8-4711-99aa-ed4981ecf540)
+
+############################# КОНЕЦ РЕШЕНИЯ #####################################
+
 
 Объектно-ориентированное программирование 
 
