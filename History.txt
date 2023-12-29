@@ -1,0 +1,24 @@
+Кудряшов Д.В. 29/12/2023 Группа 4616
+    1  sudo su - admin
+    2  sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+    3  ls
+    4  sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb 
+    5  sudo apt-get update
+    6  sudo apt-get install mysql-server
+    7  systemctl status mysql
+    8  history
+    9  sudo apt update
+   10  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+   11  sudo apt update
+   12  systemctl status mysql
+   13  java -version
+   14  sudo apt install default-jre
+   15  java -version
+   16  sudo mkdir /usr/local/java
+   17  sudo mv jre-8u291-linux-x64.tar.gz /usr/local/java
+   18  ls
+   19  java -version
+   20  clear
+   21  sudo apt install nmap
+   22  sudo apt remove nmap
+   23  history 
