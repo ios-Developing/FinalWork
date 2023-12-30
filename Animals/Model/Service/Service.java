@@ -10,7 +10,7 @@ import java.util.List;
 public class Service {
 
     private Family family;
-    private String filePath = "Animals.out";
+    private String filePath = "/work/Animals/Animals.out";
 
     public Service () {
         family = new Family();
